@@ -1,0 +1,147 @@
+body {
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.primarybtn {
+  /* position: fixed; */
+  background-color: red;
+  color: aliceblue;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 400px;
+  cursor: pointer;
+}
+.oddeven,
+.isreverse,
+.factnum,
+.isprime,
+.ispallindrom,
+.isleapyear,
+.isamstrong,
+.iscount,
+.isstrong {
+  /* display: none; */
+  background: #fff;
+  /* border: 2px solid black; */
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45),
+    25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+    0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+    0px 0px 65px 0px rgba(155, 155, 155, 1);
+  height: 250px;
+  width: 400px;
+  border-radius: 20px;
+  display: none;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 120px;
+  flex-direction: column;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* column-gap: 10px; */
+  height: 100%;
+  width: 100%;
+}
+#countinput,
+#factnuminput,
+#reverseinput,
+#stronginput,
+#oddeveninput,
+#isprimeinput,
+#ispallindrominput,
+#leapyearinput,
+#amstronginput {
+  width: 80%;
+  height: 8%;
+  height: 30px;
+  border-radius: 5px;
+  border: 0.5px solid grey;
+  color: rgb(164, 163, 163);
+  outline: none;
+  /* border: non  e; */
+  /* font-size: 2 0px; */
+  padding-left: 10px;
+}
+.secbtn {
+  margin-top: 20px;
+  width: 60%;
+  height: 30px;
+  border: none;
+  background-color: rgb(0, 128, 0);
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+h1,
+h2 {
+  text-align: center;
+  color: rgb(0, 183, 255);
+}
+.back {
+  padding-top: 20px;
+  cursor: pointer;
+  font-weight: bolder;
+  color: rgb(54, 164, 208);
+}
+.btnsec {
+  margin-top: 50px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  /* padding-bottom: 20px; */
+  align-items: center;
+  border-radius: 10px;
+  /* border: 5px solid black; */
+  max-width: 500px;
+  height: 500px;
+  padding-bottom: 30px;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45),
+    25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+    0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+    0px 0px 65px 0px rgba(155, 155, 155, 1);
+}
+footer {
+  background-color: black;
+  min-height: 60px;
+  width: 100%;
+  margin-top: 30px;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  .oddeven,
+  .isprime,
+  .ispallindrom,
+  .isleapyear {
+    width: 350px;
+    margin-right: 20px;
+  }
+  .btnsec {
+    width: 300px;
+    margin-right: 20px;
+  }
+  .primarybtn {
+    max-width: 300px;
+  }
+  .primarybtn {
+    font-size: 14px;
+  }
+}

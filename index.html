@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Checking Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo1.png">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    
+  </head>
+  <body>
+    <header class="heading">
+      <h1>Welcome To Number Checking Platform</h1>
+      <a href="https://dipayan-dey.github.io/-dip_portfolio/" target="_blank" style="text-decoration: none;"> <h3 style="text-align: center ; color: rgb(0, 140, 255);  ">Design By Dipayan Dey</h3></a>
+    </header>
+ <div class="btnsec" >
+    <div class="callsec">
+        <button class="primarybtn"  onclick="calloddeven()" style=" font-weight: bolder;"> Even Or Odd Number Check </button>
+      </div>
+      <br>
+      <!-- <br> -->
+    <div class="callsec">
+        <button class="primarybtn"  onclick="callisprime()" style="background-color: green;  font-weight: bolder;"> Prime Number Check</button>
+      </div>
+      <br>
+      <!-- <br> -->
+    <div class="callsec">
+        <button class="primarybtn"  onclick="callipallindrom()" style="background-color: rgb(13, 0, 128);  font-weight: bolder;"> Plindrom Number Check</button>
+      </div>
+      <br>
+      <!-- <br> -->
+    <div class="callsec">
+        <button class="primarybtn"  onclick="callleapyear()" style="background-color: rgb(7, 148, 177); font-weight: bolder;"> leapyear Check</button>
+      </div>
+      <br>
+      <!-- <br> -->
+    <div class="callsec">
+        <button class="primarybtn"  onclick="callamstrong()" style="background-color: rgb(7, 177, 177); font-weight: bolder;"> Amstrong Number Check</button>
+      </div>
+      <br>
+      <!-- <br> -->
+    <div class="callsec">
+        <button class="primarybtn"  onclick="callcountDigits()" style="background-color: rgb(177, 7, 61); font-weight: bolder;">Count Number Of Integer</button>
+      </div>
+      <br>
+    <div class="callsec">
+        <button class="primarybtn"  onclick="callstrongNumber()" style="background-color:rgb(255, 179, 0); font-weight: bolder;">Check Strong Number</button>
+      </div>
+      <br>
+    <div class="callsec">
+        <button class="primarybtn"  onclick="callreverseNumber()" style="background-color:rgb(255, 136, 0); font-weight: bolder;">Reverse Number Printing</button>
+      </div>
+      <br>
+    <div class="callsec">
+        <button class="primarybtn"  onclick="callfactNumber()" style="background-color:rgb(34, 0, 255); font-weight: bolder;">Factorial Of Any Number</button>
+      </div>
+      
+ </div>
+
+     <!-- <div class="contaient" style="width: 300px;"> -->
+
+    
+    <div class="oddeven">
+      <h1>Check Odd Even</h1>
+     <a href="https://deydipayan2006.github.io/-dip_portfolio/" target="_blank" style="text-decoration: none;"> <h3 style="text-align: center ; color: rgb(0, 140, 255); ">Design By Dipayan Dey</h3></a>
+      <div class="main">
+        <input type="text" name="" id="oddeveninput" placeholder="Enter Your Number" />
+
+        <button class="secbtn" id="oddevenbtn">Check</button>
+        <div class="back" onclick="oddevenback()">
+          <i class="fa-solid fa-arrow-left"> </i>
+          Back
+        </div>
+      </div>
+    </div>
+
+
+    <div class="isprime">
+      <h1>Prime Number Check</h1>
+      <h3 style="text-align: center ; color: rgb(0, 140, 255);">Design By Dipayan Dey</h3>
+      <div class="main">
+        <input type="text" name="" id="isprimeinput" placeholder="Enter Your Number" />
+
+        <button class="secbtn" id="isprimebtn">Check</button>
+        <div class="back" onclick="isprimeback()">
+          <i class="fa-solid fa-arrow-left"> </i>
+          Back
+        </div>
+      </div>
+    </div>
+
+
+    <div class="ispallindrom">
+      <h2>Palindrom Number Check</h2>
+      <h3 style="text-align: center ; color: rgb(0, 140, 255);">Design By Dipayan Dey</h3>
+      <div class="main">
+        <input type="text" name="" id="ispallindrominput" placeholder="Enter Your Number" />
+
+        <button class="secbtn" id="ispallindrombtn">Check</button>
+        <div class="back" onclick="ispllindrom()">
+          <i class="fa-solid fa-arrow-left"> </i>
+          Back
+        </div>
+      </div>
+    </div>
+
+    <div class="isleapyear">
+      <h1> Check Leapyear </h1>
+      <h3 style="text-align: center ; color: rgb(0, 140, 255);">Design By Dipayan Dey</h3>
+      <div class="main">
+        <input type="text" name="" id="leapyearinput" placeholder="Enter Your Number" />
+
+        <button class="secbtn" id="leapyearbtn">Check</button>
+        <div class="back" onclick="isleapyear()">
+          <i class="fa-solid fa-arrow-left"> </i>
+          Back
+        </div>
+      </div>
+    </div>
+
+    <div class="isamstrong">
+      <h2> Check Amstrong  Number</h2>
+      <h3 style="text-align: center ; color: rgb(0, 140, 255);">Design By Dipayan Dey</h3>
+      <div class="main">
+        <input type="text" name="" id="amstronginput" placeholder="Enter Your Number" />
+
+        <button class="secbtn" id="amstrongbtn">Check</button>
+        <div class="back" onclick="isamstrong()">
+          <i class="fa-solid fa-arrow-left"> </i>
+          Back
+        </div>
+      </div>
+    </div>
+
+    <div class="iscount">
+      <h2> Count Number Of Integer</h2>
+      <h3 style="text-align: center ; color: rgb(0, 140, 255);">Design By Dipayan Dey</h3>
+      <div class="main">
+        <input type="text" name="" id="countinput" placeholder="Enter Your Number" />
+
+        <button class="secbtn" id="countbtn">Calculate</button>
+        <div class="back" onclick="iscount()">
+          <i class="fa-solid fa-arrow-left"> </i>
+          Back
+        </div>
+      </div>
+    </div>
+
+    <div class="isstrong">
+      <h1> Strong Number Check</h1>
+      <h3 style="text-align: center ; color: rgb(0, 140, 255);">Design By Dipayan Dey</h3>
+      <div class="main">
+        <input type="text" name="" id="stronginput" placeholder="Enter Your Number" />
+
+        <button class="secbtn" id="strongbtn">Check</button>
+        <div class="back" onclick="isStrongBack()">
+          <i class="fa-solid fa-arrow-left"> </i>
+          Back
+        </div>
+      </div>
+    </div>
+
+    <div class="isreverse">
+      <h2> Reverse Number Printing</h2>
+      <h3 style="text-align: center ; color: rgb(0, 140, 255);">Design By Dipayan Dey</h3>
+      <div class="main">
+        <input type="text" name="" id="reverseinput" placeholder="Enter Your Number" />
+
+        <button class="secbtn" id="reversebtn">Calculate</button>
+        <div class="back" onclick="isReverseBack()">
+          <i class="fa-solid fa-arrow-left"> </i>
+          Back
+        </div>
+      </div>
+    </div>
+
+    <div class="factnum">
+      <h2> Factorial Number Calculation</h2>
+      <h3 style="text-align: center ; color: rgb(0, 140, 255);">Design By Dipayan Dey</h3>
+      <div class="main">
+        <input type="text" name="" id="factnuminput" placeholder="Enter Your Number" />
+
+        <button class="secbtn" id="factnumbtn">Calculate</button>
+        <div class="back" onclick="factBack()">
+          <i class="fa-solid fa-arrow-left"> </i>
+          Back
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+<!-- <section style="min-height: 200px;"></section> -->
+
+
+<!-- <footer>
+  <div class="footer_copyright">
+    <small>Website Created By <a href="https://www.facebook.com/profile.php?id=100070085482170&mibextid=ZbWKwL" target="_blank">Mr Dipayan Dey</a> | Copyright &copy; 2024 All rights reserved.</small> -->
+</div>
+</footer>
+
+ 
+
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
